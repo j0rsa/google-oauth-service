@@ -1,0 +1,24 @@
+[package]
+name = "google-oauth-service"
+version = "0.1.0"
+authors = ["red <red.avtovo@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+actix-web = "4.0.0-beta.4"
+actix-rt = "2.1.0"
+actix-service = "1.0.6"
+
+reqwest = { version = "0.11.2", features = ["json"]}
+serde_urlencoded = "0.7.0"
+chrono = { version = "0.4.19", features = ["clock"] }
+
+jsonwebtoken = "7"
+
+uuid = { version = "0.8", features = ["serde", "v4"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+json = "*"
+
+log = "0.4.8"
+env_logger = "0.8.2"
